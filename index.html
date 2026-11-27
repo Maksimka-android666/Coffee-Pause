@@ -634,10 +634,62 @@
                         <a href="https://t.me/kofeynaya_payza" class="social-btn tg">Telegram</a>
                     </div>
                 </div>
-                
                 <div class="contact-form">
-                    <h3>Забронировать столик</h3>
-                    <form action="#" method="post">
+    <h3>Забронировать столик</h3>
+
+    <form action="https://formsubmit.co/info@coffee-pause.ru"
+          method="POST">
+
+        <!-- Тема письма -->
+        <input type="hidden" name="_subject"
+               value="Новая заявка на бронирование столика">
+
+        <!-- Формат письма -->
+        <input type="hidden" name="_template"
+               value="table">
+
+        <!-- Имя -->
+        <input type="text"
+               name="Имя"
+               placeholder="Ваше имя"
+               required>
+
+        <!-- Email -->
+        <input type="email"
+               name="email"
+               placeholder="Email"
+               required>
+
+        <!-- Телефон -->
+        <input type="tel"
+               name="Телефон"
+               placeholder="Телефон"
+               required>
+
+        <!-- Количество гостей -->
+        <select name="Количество гостей" required>
+            <option value="">Количество гостей</option>
+            <option value="1 человек">1 человек</option>
+            <option value="2 человека">2 человека</option>
+            <option value="3-4 человека">3-4 человека</option>
+            <option value="5 и более">5 и более</option>
+        </select>
+
+        <!-- Пожелания -->
+        <textarea name="Пожелания"
+                  rows="3"
+                  placeholder="Пожелания"></textarea>
+
+        <!-- Защита от простых спам-ботов -->
+        <input type="text" name="_honey"
+               style="display:none">
+
+        <button type="submit" class="btn">
+            Забронировать
+        </button>
+
+    </form>
+</div>
                         <input type="text" placeholder="Ваше имя" required>
                         <input type="email" placeholder="Email" required>
                         <input type="tel" placeholder="Телефон">
